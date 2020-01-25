@@ -1,0 +1,1 @@
+web gunicorn _root:learning-blog-app
