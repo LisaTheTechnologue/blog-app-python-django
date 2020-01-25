@@ -59,8 +59,7 @@ CORS_ORIGIN_REGEX_WHITELIST = [
     'http://localhost:4200',
 ]
 ROOT_URLCONF = '_root.urls'
-MEDIA_URL = 'media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -133,9 +132,5 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-#filter add
-STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, '_root/static'),
-)
 MEDIA_URL = '/_media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, '_media')
